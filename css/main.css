@@ -203,6 +203,27 @@
           box-sizing: border-box;
 }
 
+.resume-lines__descr {
+  list-style: disc !important;
+  padding-left: 20px !important;
+}
+
+.resume-lines__descr li {
+  display: list-item !important;
+}
+
+.avatar__btnwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .avatar__btnwrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
 button:active, button:focus {
   outline: none !important;
 }
@@ -214,6 +235,8 @@ button::-moz-focus-inner {
 input::-moz-focus-inner {
   border: 0 !important;
 }
+
+
 
 a:focus,
 button:focus,
@@ -2578,13 +2601,9 @@ form textarea:required:valid {
   .content__block.section-grid-title {
     margin-bottom: 1.9rem;
   }
-  .content__block.block-large {
-    margin-bottom: 13rem;
-  }
 
-    .content__block1 .block-large {
-    margin-bottom: 2rem;
-  }
+
+
 
 
   .content__block.block-grid-large {
